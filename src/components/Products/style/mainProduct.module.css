@@ -1,0 +1,96 @@
+
+.container{
+    
+    position: relative;
+    width: 100%;
+    height: 600px;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.173);
+
+    
+}
+
+
+.figure{
+    width: 100%;
+    height: 600px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    
+    
+}
+.img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.containerButton{
+    display: flex;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 0%;
+    justify-content: center;
+       
+}
+
+.article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    bottom: 30%;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: 400;
+    
+    color: var(--white);
+}
+
+.buttonContainer{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    bottom: 15%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.button{
+    width: 90px;
+    position: absolute;
+    background: none;
+    border: 2px solid var(--white);
+    color: var(--white);
+    padding: 10px;
+    margin-top: 10px;
+   
+    
+}
+
+.button:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 20px 0 white;
+}
+
+.bottonChangeImage{
+    background: none;
+    padding: 10px;
+    border: 2px solid var(--white);
+    color: var(--white);
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.bottonChangeImage:hover{
+    transition: 0.5s;
+    box-shadow: 0 0 20px 0 white;
+}

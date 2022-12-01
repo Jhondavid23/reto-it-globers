@@ -1,0 +1,53 @@
+.container{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    position: relative;
+    color: var(--white);
+    font-weight: bold;
+}
+.logo{
+    width: 90px;
+    height: auto;
+}
+.section{
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+}
+.sectionDiv{
+    border-right: 1px solid var(--white);
+    cursor: pointer;    
+}
+
+.sectionDivCorner{
+    cursor: pointer;
+}
+.sectionDivCorner:hover{
+    transform: translateY(-3px);
+    transition: 0.7s; 
+}
+
+.sectionDiv:hover{
+    transform: translateY(-3px);
+    transition: 0.7s;  
+}
+
+.login{
+    display: flex;
+    position: absolute;
+    right: 15px;
+}
+
+.p{
+    margin: 10px;
+}
+
+.pSmall{
+    font-size: 10px;
+    margin: 10px;
+    font-weight: 400;
+}
