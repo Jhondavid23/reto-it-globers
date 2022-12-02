@@ -3,7 +3,7 @@ import ContactForm from '../contactForm/ContactForm';
 import newsletterStyle from './newsletter.module.css';
 
 function Newsletter() {
-
+    //List of photos
     const listOfPhotos = ["https://thumbs.dreamstime.com/z/gente-bajo-los-paraguas-2728452.jpg", "https://e.rpp-noticias.io/normal/2018/05/08/262526_606534.jpg", "https://www.happers.es/server/Portal_0010674/img/products/happers-to-go-azul_1726265_49420639_xl.jpg", "https://www.happers.es/server/Portal_0010689/img/galeria/carrusel_happers_to_go_s7_30455.jpg", "https://www.happers.es/server/Portal_0010674/img/categories/categoria_listado_pera_img3_106570.jpg", "https://www.livemorezone.com/wp-content/uploads/young-men-relaxing-on-bean-bag-chair-on-white-background-stock-photo.jpg"]
 
     return (

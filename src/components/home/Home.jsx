@@ -29,7 +29,7 @@ function Home() {
         dispatch(setImage(images[nextIndex]));
         dispatch(setIndex(nextIndex));
     }
-    //Buttons
+    //Buttons previous and next
     const previous = () => {
         selectNewImage(selectedIndex, images, false);
     };

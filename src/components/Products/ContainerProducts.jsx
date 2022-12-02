@@ -17,6 +17,8 @@ export class ContainerProducts extends Component {
   }
 }
 
+
+// Connection with redux state
 const mapStateToProps = (state)=>{
     return {
         products : state.products.products

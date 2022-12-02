@@ -7,10 +7,12 @@ function ContactForm() {
   const [errors, setErrors] = useState({})
   const [state, handleSubmit] = useForm("xknelkpp");
 
+  //confirmation message
   if (state.succeeded) {
     return <p>¡Gracias por unirte!</p>;
 }
  
+  //The email entered is verified
   const onChange = (e)=>{
     const {value} = e.target;
     if(!/\S+@\S+\.\S+/.test(value)){
