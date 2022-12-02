@@ -1,0 +1,22 @@
+
+
+.inputred{
+    width: 400px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid red;
+}
+
+.input{
+    width: 400px;
+    height: 20px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.button{
+    height: 34px;
+    padding: 7px;
+    border: 2 solid black;
+    background: none;
+}

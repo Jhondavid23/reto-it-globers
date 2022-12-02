@@ -1,14 +1,26 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux';
-import { setIndex, setImage } from '../../store/slice/products/index';
+import { setIndex, setImage, setProducts } from '../../store/slice/products/index';
 import { images } from '../../store/slice/products/index';
 import MainProduct from '../Products/MainProduct';
+import ContainerProducts from '../Products/ContainerProducts'
+import { Allproducts } from '../../db/index';
+import Newsletter from '../newsletter/Newsletter';
+import Footer from '../footer/Footer';
 
 function Home() {
+
     //redux connection
     const dispatch = useDispatch();
     const selectedIndex = useSelector((state) => state.products.selectedIndex);
     const selectedImage = useSelector((state) => state.products.selectedImage);
+    // const products = useSelector((state)=> state.products.products)
+
+
+    //ComponentDidMount
+    React.useEffect(() => {
+        dispatch(setProducts(Allproducts))
+    }, [dispatch])
 
     //Change image
     const selectNewImage = (index, images, next = true) => {
@@ -26,12 +38,21 @@ function Home() {
         selectNewImage(selectedIndex, images);
     };
     return (
-        <div>
-           <div>
-            <MainProduct selectedImage={selectedImage} previous={previous} next={next}/>
-           </div>
-            
-        </div>
+        <>
+            <header>
+                <MainProduct selectedImage={selectedImage} previous={previous} next={next} />
+            </header>
+            <article>
+                <ContainerProducts />
+            </article>
+            <article>
+                <Newsletter/>
+            </article>
+            <footer>
+                <Footer/>
+            </footer>
+
+        </>
     )
 }
 

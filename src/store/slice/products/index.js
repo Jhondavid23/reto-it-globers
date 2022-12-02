@@ -17,11 +17,15 @@ export const productSlice = createSlice({
         },
         setImage : (state, action)=>{
             state.selectedImage = action.payload
+        },
+        setProducts : (state, action)=>{
+            state.products = action.payload
         }
+
     }
 
 })
 
-export const {setIndex, setImage} = productSlice.actions
+export const {setIndex, setImage, setProducts} = productSlice.actions
 
 export default productSlice.reducer
